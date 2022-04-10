@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: cornsilk;
+    font-size: 15px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+    color: #fff;
+}
+main{
+    height:400px;
+    width: 300px;
+    background-color: dimgray;
+    padding: 20px;
+}
+main > ul > li{
+    margin-top: 30px;
+    list-style: none;
+    color: #fff;
+    position: relative;
+}
+
+main > ul > li::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top:calc(100% + 5px);
+    left:0;
+    width: 100%;
+    height:15px;
+    border-radius: 100px;
+}
+main > ul > li::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top:calc(100% + 5px);
+    left:0;
+    width: 0%;
+    height:15px;
+    border-radius: 100px;
+    background-color:blueviolet;
+
+    /* animation work */
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:2;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+/* ========================================= */
+/* for html */
+main > ul li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+/* for css */
+main > ul li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 80%;
+        background-color:aqua;
+    }
+}
+
+/* for js */
+main > ul li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 70%;
+        background-color: darkblue;
+    }
+}
+
+/* for react */
+main > ul li.react::after{
+    animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 80%;
+        background-color:cornflowerblue;
+    }
+}
+
+/* for node */
+main > ul li.node::after{
+    animation-name: node;
+}
+
+@keyframes node{
+    to{
+        width: 60%;
+        background-color:brown;
+    }
+}
+
+/* for mongo */
+main > ul li.mongo::after{
+    animation-name: mongo;
+}
+
+@keyframes mongo{
+    to{
+        width: 70%;
+        background-color:darkgreen;
+    }
+}
+
+
