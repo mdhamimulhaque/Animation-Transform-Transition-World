@@ -10,11 +10,7 @@ body{
     background-color: cornsilk;
     font-size: 15px;
     height: 100%;
-    width: 100%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-   
+    width: 100%;  
 }
 h2{
     text-align: center;
@@ -29,7 +25,7 @@ main{
     padding: 20px;
     background-color:darkslategray;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .projects{
@@ -42,6 +38,11 @@ main{
     line-height: 30px;
     border-radius: 20px;
     margin-right: 10px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
 }
 .projects > a{
     text-decoration: none;
